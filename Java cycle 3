@@ -1,0 +1,258 @@
+1.
+import java.util.*;
+class student
+{
+String name;
+int rollno;
+int mark[]=new int[5];
+void read()
+{
+Scanner st=new Scanner(System.in);
+System.out.println("enter the name");
+name=st.nextLine();
+System.out.println("enter the roll number");
+rollno=st.nextInt();
+for(int i=0;i<5;i++)
+{
+System.out.println("enter the marks of subject"+" "+(i+1));
+mark[i]=st.nextInt();
+}
+}
+void display()
+{
+System.out.println("Name:"+name);
+System.out.println("Roll No:"+rollno);
+for(int i=0;i<5;i++)
+{
+System.out.println("Marks of subject"+" "+(i+1)+" "+"is"+" "+mark[i]);
+}
+}
+}
+class main
+{
+public static void main(String args[])
+{
+student s1=new student();
+s1.read();
+s1.display();
+}
+}
+
+
+2.
+import java.util.*;
+class main
+{
+void factorial(int n)
+{
+int f=1,i;
+for(i=1;i<=n;i++)
+f=f*i;
+System.out.println(n+"!"+"="+f);
+}
+void sumofdigits(int n)
+{
+int sum=0,dg;
+while(n!=0)
+{
+dg=n%10;
+sum=sum+dg;
+n=n/10;
+}
+System.out.println("sum of digits:"+sum);
+}
+public static void main(String args[])
+{
+main num=new main();
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number to find the factorial");
+int n=sc.nextInt();
+System.out.println("Enter the number to find the sum of digits");
+int m=sc.nextInt();
+num.factorial(n);
+num.sumofdigits(m);
+}
+}
+
+
+3.
+import java.util.*;
+
+class main
+{
+void frequency(String s,char c)
+{
+int a=0;
+for(int i=0;i<s.length();i++)
+{
+if(s.charAt(i)==c)
+a++;
+}
+System.out.println("the frequency of the given character in the string is "+" "+a);
+}
+void reverse(String s)
+{
+String rev=" ";
+for(int i=s.length()-1;i>=0;i--)
+{
+rev=rev+s.charAt(i);
+}
+System.out.println("The reversed string is"+" "+rev);
+}
+public static void main(String args[])
+{
+main str=new main();
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the string to be reversed");
+String s2=sc.nextLine();
+str.reverse(s2);
+System.out.println("Enter a string");
+String s1=sc.nextLine();
+System.out.println("Enter a character to find its frequency in the string");
+char c=sc.next().charAt(0);
+str.frequency(s1,c);
+}
+}
+
+
+4.
+import java.util.*;
+class main
+{
+static void area(double r)
+{
+double area=3.14*r*r;
+System.out.println("The area of the circle is"+" "+area);
+}
+static void area(float l,float b)
+{
+float area=l*b;
+System.out.println("The area of the rectangle is"+" "+area);
+}
+static void area(double b,double h)
+{
+double area=0.5*b*h;
+System.out.println("The area of the triangle is"+" "+area);
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("To find the area of");
+System.out.println("1.Circle");
+System.out.println("2.Rectangle");
+System.out.println("3.Triangle");
+int choice=sc.nextInt();
+switch(choice)
+{
+case 1:
+{
+System.out.println("Enter the radius of the circle");
+double r=sc.nextDouble();
+area(r);
+break;
+}
+case 2:
+{
+System.out.println("Enter the length of the rectangle");
+float l=sc.nextFloat();
+System.out.println("Enter the breadth of the rectangle");
+float b=sc.nextFloat();
+area(l,b);
+break;
+}
+case 3:
+{
+System.out.println("Enter the base of the triangle");
+double b=sc.nextFloat();
+System.out.println("Enter the height of the triangle");
+double h=sc.nextFloat();
+area(b,h);
+break;
+}
+default:
+System.out.println("Enter a valid option");
+}
+}
+}
+
+
+
+5.
+import java.util.*;
+class main
+{
+main(double r)
+{
+double area=3.14*r*r;
+System.out.println("The area of the circle is"+" "+area);
+}
+main(double l,double b)
+{
+double area=l*b;
+System.out.println("The area of the rectangle is"+" "+area);
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("To find the area of");
+System.out.println("1.Circle");
+System.out.println("2.Rectangle");
+int choice=sc.nextInt();
+switch(choice)
+{
+case 1:
+{
+System.out.println("Enter the radius of the circle");
+double r=sc.nextDouble();
+main obj=new main(r);
+break;
+}
+case 2:
+{
+System.out.println("Enter the length of the rectangle");
+double l=sc.nextFloat();
+System.out.println("Enter the breadth of the rectangle");
+double b=sc.nextFloat();
+main obj=new main(l,b);
+break;
+}
+default:
+System.out.println("Enter a valid option");
+}
+}
+}
+
+
+6.
+
+import java.util.*;
+class main
+{
+static void concatenate(int a,int b)
+{
+System.out.println("The concatenated number is");
+System.out.println(""+a+b);
+}
+static void concatenate(String a,String b)
+{
+System.out.println("The concatenated string is");
+}
+System.out.println(a+b);
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the first string");
+String s1=sc.nextLine();
+System.out.println("Enter the second string");
+String s2=sc.nextLine();
+concatenate(s1,s2);
+System.out.println("Enter the first number");
+int n1=sc.nextInt();
+System.out.println("Enter the second number");
+int n2=sc.nextInt();
+concatenate(n1,n2);
+}
+}
+
+
+
