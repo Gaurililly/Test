@@ -1,0 +1,64 @@
+importjava.awt.":
+
+importjava.awt.event.": classshapesextendsFrameimplementsItemListener
+{
+Stringclr="";
+
+shapes()
+
+( Checkboxc1, c2.c3;
+
+CheckboxGroupcbg-newCheckboxGroup(): c1=newCheckbox("Line", true.cbg):
+
+c2=newCheckbox("Rectangle", true.cbg):
+
+c3-newCheckbox("Oval", true.cbg):
+
+setSize(500,500):
+
+setTitle("Shapes"):
+
+setVisible(true): setLayout (newFlowLayout (FlowLayout.CENTER));
+
+add(c1):
+
+add(c2):
+
+add(c3);
+
+c1.addItemListener(this): c2.addItemListener(this); c3.addItemListener(this); addWindowListener(newWindowAdapter()
+
+publicvoidwindowClosing (WindowEvente)
+
+System.exit(0):
+
+}
+
+publicstaticvoidmain(String[] args)
+{
+newshapes()
+}
+publicvoiditemStateChanged(ItemEvente)
+{
+ clr=(e.getItem()).toString():
+ }
+
+repaint();
+}
+publicvoidpaint (Graphicsg)
+
+super.paint (g): if(clr.equals("Line"))
+
+g.setColor(Color.red): g.drawLine(50,100,350,100):
+
+g.setColor(Color.magenta): g.drawOval (195,100,90,55): }
+
+if(clr.equals("Oval"))
+
+g.setColor(Color.blue): g.drawRect(5,40,90,55):
+
+} if(clr.equals("Rectangle")) 
+{
+g.setColor(Color.blue): g.drawRect(5,40,90,55):
+}
+}
