@@ -1,0 +1,142 @@
+import java.awt.eventi import java.awt.": import javax.swing.
+
+public class calc extends JFrame implements ActionListener
+{
+JButton b10,b11.b12,613.b14.b15: JButton bl-new JButton[10]:
+
+JTextField res = new JTextField():
+
+char op:
+}
+public calc()
+{
+super("Calulator")
+
+JFrame frame = new JFrame(): setLayout(new BorderLayout()):
+
+JPanel p new JPanel(): res setBounds(10, 40, 270, 40)
+
+res setFont(new Font("Arial", Fort BOLD, 20)) res setEditable(false):
+
+res.setHorizontalAlignment (SwingConstants.RIGHT)
+
+frame.add(res):
+
+p setLayout(newGridLayout(4.4)): for (inti-0:1<10++)
+
+b[i]=new Button(+)
+
+bladdActionListener(this);
+
+b10-newJButton("+"); padd(b10):
+
+b10.addActionListener(this):
+
+b11-new JButton("-");
+
+p.add(b11) b11.addActionListener(this);
+
+b12-new JButton("""): padd(b12);
+
+b12.addActionListener(this);
+
+b13-new JButton("/"); padd(613)
+
+b13.addActionListener(this);
+
+b14-newJButton("-"):
+
+padd(b14)) b14.addActionListener(this);
+
+615-new JButton("C") p.add(b15)
+add(p.BorderLayout.CENTER); add(res BorderLayout NORTH):
+
+setVisible(true): setSize(200,250)
+}
+publicvoidactionPerformed(ActionEventae)
+{
+JButtonpb (JButton)ae.getSource()
+
+if(pb--b15)
+
+r-n1-12-0 res setText(""):
+
+else
+
+if(pb==b14)
+
+eval()
+
+n2-Integer.parseInt(res.getText()); res.setText (^ nn + r )
+
+else
+
+boolean opf-false
+
+if(pb = - b * 10) ( op phi^ prime +^ prime
+
+opf=truer
+
+f( pb ==b11)
+
+(op=""opf=true;) (op=^ prime* prime ;opf= tr*omega*e /)
+
+( pb ==b12)
+
+if ( pb ==b13)
+
+{ op=^ prime /^ prime prime opf =tr cup(C)
+
+if (opf==false)
+
+(
+
+for (l=0.l<10.l++ { f(pb== b[i] )
+
+{ String tores.getText():
+
+10
+
+else
+
+t +=l; res setText(t);
+
+n1-Integer.parseInt(res.getText);
+res.setText(t);
+
+else
+
+n1-Integer.parseInt(res.getText
+
+res.setText("")
+
+0)
+
+}
+
+Int eval()
+
+switch(op)
+
+case:
+
+r =n1+n2 break
+
+case r = n * 1n * 2 break:
+
+case r =n1^ * n2 break:
+
+case:
+
+r = nI / n * 2
+
+break
+
+return 0
+
+public static void main(String arg[]){
+
+new calc():
+
+}
+}
