@@ -1,0 +1,59 @@
+import java.awt.
+
+import java.awt.event class Traffic extends Frame implements ItemListener
+{
+String cir Traffic
+
+Checkbox c1c2.c3
+
+CheckboxGroup cbg-new Checkbox Group c1-new Checkbox("red" true.cbg)
+
+c2-new Checkbox("green" true.cbg): c3-new Checkbox("yellow" true.cbg)
+
+setTitle("Traffic Signal"):
+
+setSize(500.500) setVisible(true) setLayout(new FlowLayout (FlowLayout CENTER))
+
+add(c1) add(c2)
+
+add(c3):
+
+C1 additemListener(this);
+
+c2 additemListener(this) c3 additemListener(this);
+
+addWindowListener(new WindowAdapter()
+}
+
+public void windowClosing(WindowEvent e){
+
+System.exit(0)}
+
+public static void main(String[] args) H
+{
+new Traffic
+}
+public void itemStateChanged(itemEvent e)
+{
+cir (egetitem().toString0 repaint():
+}
+public void paint (Graphics g)
+{
+g.drawString(Traffic signals1,200,250):
+
+g.drawRect(200.80.100.250) gsetColor(Color black)
+
+a.fillRect(200.80.100.250) if(cle.equals("red"))
+
+g setColor(Color.red)
+
+gfillOval (225,125,50,50)
+
+if(cir.equals("green"))
+{
+g setColor(Color.green) gfillOval (225.175.50.50)
+}
+if(cir equals("yellow"))
+{
+g setColor(Color.yellow) gfillOval (225,225,50,50):
+}}}
