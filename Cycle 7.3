@@ -1,0 +1,43 @@
+import java.awt.":
+
+import java.awt.event.": import javax.swing.":
+
+public class mouse extends Frame implements
+
+MouseListener( static JLabel 1;
+
+mouse()
+{}
+
+public void mouseClicked(MouseEvent e) 
+{ 1.setText("Mouse Clicked");
+
+public void mouseEntered (MouseEvent e) 
+{
+ I.setText("Mouse Entered"):
+
+public void mouseExited (MouseEvent e) 
+{ 
+1.setText("Mouse Exited");
+
+public void mousePressed(MouseEvent e) {
+
+1.setText("Mouse Pressed");
+
+public void mouseReleased (MouseEvent e) {
+
+I.setText("Mouse Released");
+
+public static void main(String[] args) { JFrame f = new JFrame("Mouse"); f.setSize(300,300): mouse m = new mouse():
+
+f.addMouseListener(m): JPanel p = new JPanel():
+
+1 = new JLabel():
+
+p.add(1):
+
+f.add(p):
+
+f.setVisible(true);
+}
+}
